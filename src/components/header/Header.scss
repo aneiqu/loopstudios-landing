@@ -1,0 +1,33 @@
+@import "../../scss/variables";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: $paddingHorizontal;
+  padding-right: $paddingHorizontal;
+  padding-top: 4rem;
+  padding-bottom: 9.125rem;
+  font-family: "Alata";
+  color: white;
+  background-image: url("../../assets/images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__title_container {
+  max-width: calc(650px - 80px - 4px);
+  height: min-content;
+  padding: 2.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 8.1rem;
+  border: 2px solid white;
+}
+
+.header__title {
+  margin: 0px;
+  font-family: "JosefinSans";
+  font-size: 4.5rem;
+  line-height: 70px;
+  font-weight: 200;
+  text-transform: uppercase;
+}

@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+@import "../../scss/global";
+.footer {
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  padding-left: $paddingHorizontal;
+  padding-right: $paddingHorizontal;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  background-color: black;
+  font-family: "Alata";
+  row-gap: 1.5rem;
+}
+.row__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social_container {
+  display: flex;
+  gap: 1rem;
+}
+.footer__nav__container {
+  display: flex;
+  gap: 2rem;
+}

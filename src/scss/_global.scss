@@ -1,0 +1,18 @@
+.underline__effect {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.underline__effect::after {
+  transition: all;
+  transition-duration: 250ms;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #fff;
+}
+.underline__effect:hover::after {
+  width: 100%;
+}

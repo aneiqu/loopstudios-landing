@@ -1,0 +1,12 @@
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav__bttn__container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}

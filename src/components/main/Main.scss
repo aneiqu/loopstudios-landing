@@ -1,0 +1,108 @@
+@import "../../scss/variables";
+picture {
+  display: flex;
+  cursor: pointer;
+}
+picture:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 100%;
+  height: 100%;
+}
+
+picture:hover + .card__text {
+  color: black;
+}
+
+.subtitle__container {
+  padding-left: $paddingHorizontal;
+  padding-right: $paddingHorizontal;
+  padding-top: 10rem;
+}
+.subtitle__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  font-family: "Alata";
+}
+.subtitle__text__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+  padding-left: 6rem;
+  padding-top: 6rem;
+  max-width: 445px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+}
+
+.subtitle__header {
+  font-family: "JosefinSans";
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.subtitle__description {
+  font-size: 0.93rem;
+  line-height: 1.6rem;
+  color: $DarkGray;
+  margin: 0;
+  font-family: "Alata";
+}
+.creations__container {
+  @extend .subtitle__container;
+}
+.creations__text__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.creations__header {
+  @extend .subtitle__header;
+}
+.creations__bttn {
+  font-family: "Alata";
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.3125rem;
+  border: 1px solid black;
+  padding: 2.3385rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+}
+.creations__bttn:hover {
+  color: white;
+  background-color: black;
+}
+.creations__display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1.875rem;
+  margin-bottom: 11.5rem;
+}
+
+.card__container {
+  position: relative;
+  width: min-content;
+}
+.card__text {
+  position: absolute;
+  left: 0%;
+  width: 70%;
+  padding-left: 2.5rem;
+  bottom: 2rem;
+  font-family: "JosefinSans";
+  font-weight: 300;
+  font-size: 2rem;
+  color: white;
+  pointer-events: none;
+}
